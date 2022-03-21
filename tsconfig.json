@@ -1,0 +1,16 @@
+{
+  "include": ["lib"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "node",
+    "strict": true,
+    "outDir": "types",
+    "declaration": true,
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true,
+    "useDefineForClassFields": true,
+    "allowJs": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@musakui/scraper",
+  "description": "web scraper using IndexedDB as storage",
+  "author": "musakui",
+  "license": "MIT",
+  "repository": "github:musakui/scraper",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./lib/index.js",
+  "browser": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./pages": "./lib/pages.js",
+    "./spider": "./lib/spider.js"
+  },
+  "types": "./types/index.d.ts",
+  "files": [
+    "types",
+    "lib"
+  ],
+  "scripts": {
+  },
+  "dependencies": {
+    "idb": "^7.0.1"
+  },
+  "devDependencies": {
+  }
+}
