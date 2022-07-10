@@ -6,7 +6,7 @@
 ## Quickstart
 
 ```js
-const spider = await import('https://cdn.skypack.dev/@musakui/scraper/spider').then(({ create }) => create())
+const spider = await import('https://cdn.skypack.dev/@musakui/scraper/spider').then(({ create }) => create('scraper'))
 spider.start('/')
 ```
 
