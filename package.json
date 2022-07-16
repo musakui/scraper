@@ -1,10 +1,13 @@
 {
 	"name": "@musakui/scraper",
 	"description": "web scraper using IndexedDB as storage",
+	"keywords": [
+    "IndexedDB"
+  ],
 	"author": "musakui",
 	"license": "MIT",
 	"repository": "github:musakui/scraper",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"type": "module",
 	"main": "./lib/index.js",
 	"browser": "./lib/index.js",
