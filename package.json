@@ -4,7 +4,7 @@
 	"author": "musakui",
 	"license": "MIT",
 	"repository": "github:musakui/scraper",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"type": "module",
 	"main": "./lib/index.js",
 	"browser": "./lib/index.js",
@@ -19,6 +19,7 @@
 		"lib"
 	],
 	"scripts": {
+		"gentypes": "npx -p typescript tsc"
 	},
 	"dependencies": {
 		"idb": "^7.0.2"
