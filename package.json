@@ -2,30 +2,27 @@
 	"name": "@musakui/scraper",
 	"description": "web scraper using IndexedDB as storage",
 	"keywords": [
-    "IndexedDB"
-  ],
+		"IndexedDB"
+	],
 	"author": "musakui",
 	"license": "MIT",
 	"repository": "github:musakui/scraper",
-	"version": "0.3.1",
+	"version": "0.4.0",
 	"type": "module",
+	"files": [
+		"lib"
+	],
 	"main": "./lib/index.js",
-	"browser": "./lib/index.js",
+	"types": "./lib/types.d.ts",
 	"exports": {
 		".": "./lib/index.js",
 		"./db": "./lib/database.js",
+		"./crawl": "./lib/crawl.js",
+		"./worker": "./lib/worker.js",
 		"./spider": "./lib/spider.js"
 	},
-	"types": "./types/index.d.ts",
-	"files": [
-		"types",
-		"lib"
-	],
-	"scripts": {
-		"gentypes": "npx -p typescript tsc"
-	},
 	"dependencies": {
-		"idb": "^7.0.2"
+		"idb": "^7.1.0"
 	},
 	"devDependencies": {
 	}
