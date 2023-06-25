@@ -7,20 +7,13 @@
 	"author": "musakui",
 	"license": "MIT",
 	"repository": "github:musakui/scraper",
-	"version": "0.4.0",
+	"version": "0.4.1",
 	"type": "module",
 	"files": [
 		"lib"
 	],
 	"main": "./lib/index.js",
 	"types": "./lib/types.d.ts",
-	"exports": {
-		".": "./lib/index.js",
-		"./db": "./lib/database.js",
-		"./crawl": "./lib/crawl.js",
-		"./worker": "./lib/worker.js",
-		"./spider": "./lib/spider.js"
-	},
 	"dependencies": {
 		"idb": "^7.1.0"
 	},
