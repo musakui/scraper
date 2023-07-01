@@ -1,11 +1,20 @@
 import type { DBSchema } from 'idb'
 
 export interface WebPage {
-	/** page URL */
+	/** page URL (db key) */
 	url: string
+
+	/** scrape status */
+	status?: number
 
 	/** update timestamp */
 	date?: Date
+
+	/** user-set tags */
+	tag?: string
+
+	/** referrer */
+	ref?: string
 
 	/** response body */
 	body?: string | ArrayBuffer
@@ -19,27 +28,20 @@ export interface WebPage {
 	/** response final URL (if redirected) */
 	newURL?: string
 
-	/** page status */
-	status?: number
-
-	/** page referrer */
-	ref?: string
-
-	/** page type */
-	ptype?: string
-
-	/** download queue priority */
+	/** scrape queue priority */
 	q?: number
 }
+
+export type LinkQueue = Map<string, Partial<WebPage>>
 
 export interface ScraperDB extends DBSchema {
 	pages: {
 		key: string
 		value: WebPage
 		indexes: {
-			type: string
-			updated: Date
+			tag: string
 			queue: number
+			updated: Date
 			status: [number, string]
 		}
 	}
