@@ -25,6 +25,8 @@
 			"import": "./lib/index.js"
 		}
 	},
+	"scripts": {
+	},
 	"dependencies": {
 		"idb": "^7.1.0"
 	},
