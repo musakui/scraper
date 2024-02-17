@@ -30,9 +30,10 @@ export interface WebPage {
 
 	/** scrape queue priority */
 	q?: number
-}
 
-export type LinkQueue = Map<string, Partial<WebPage>>
+	/** local metadata store */
+	meta?: Record<string, unknown>
+}
 
 export interface ScraperDB extends DBSchema {
 	pages: {
