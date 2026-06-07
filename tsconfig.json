@@ -5,10 +5,8 @@
 		"allowJs": true,
 		"target": "ESNext",
 		"module": "ESNext",
-		"moduleResolution": "node",
-		"declaration": true,
-		"esModuleInterop": true,
-		"lib": ["ESNext", "DOM", "DOM.Iterable"]
+		"moduleResolution": "bundler",
+		"lib": ["ESNext", "DOM"]
 	},
 	"include": ["lib"]
 }

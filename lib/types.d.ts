@@ -1,6 +1,4 @@
-import type { DBSchema } from 'idb'
-
-export interface WebPage {
+export type WebPage = {
 	/** page URL (db key) */
 	url: string
 
@@ -33,17 +31,4 @@ export interface WebPage {
 
 	/** local metadata store */
 	meta?: Record<string, unknown>
-}
-
-export interface ScraperDB extends DBSchema {
-	pages: {
-		key: string
-		value: WebPage
-		indexes: {
-			tag: string
-			queue: number
-			updated: Date
-			status: [number, string]
-		}
-	}
 }

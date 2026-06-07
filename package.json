@@ -7,10 +7,9 @@
 	"author": "musakui",
 	"license": "MIT",
 	"repository": {
-		"type": "git",
 		"url": "git+https://github.com/musakui/scraper.git"
 	},
-	"version": "0.6.3",
+	"version": "0.7.0",
 	"type": "module",
 	"files": [
 		"types",
@@ -32,9 +31,9 @@
 		"dev": "vite"
 	},
 	"dependencies": {
-		"idb": "^8.0.0"
+		"@musakui/ui": "^0.0.4"
 	},
 	"devDependencies": {
-		"vite": "latest"
+		"vite": "^8.0.0"
 	}
 }
